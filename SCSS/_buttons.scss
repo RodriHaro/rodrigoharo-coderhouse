@@ -1,0 +1,39 @@
+// _buttons.scss
+.button-container {
+    position: absolute;
+    height: 40px;
+    top: 118px;
+    right: 400px;
+    align-items: center;
+    z-index: 1;
+  
+    a {
+      color: $button-text-color;
+    }
+  
+    .button-sesion-cart {
+      outline: 0 !important;
+      border: 0 !important;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: transparent;
+      transition: all ease-in-out 0.3s;
+      cursor: pointer;
+      color: $button-text-color;
+  
+      &:hover {
+        transform: translateY(-3px);
+      }
+  
+      .icon {
+        font-size: 20px;
+      }
+    }
+  }
+  
+  .whatsapp {
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+  }

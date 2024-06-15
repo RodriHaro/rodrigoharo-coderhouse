@@ -1,0 +1,91 @@
+// _form.scss
+.form-container {
+    background-color: $background-white;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -136px;
+  
+    .title {
+      font-size: 24px;
+      font-weight: $font-medium;
+      text-align: center;
+    }
+  
+    .form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+  
+      .form-group {
+        position: relative;
+  
+        label {
+          font-size: 14px;
+          color: rgb(99, 102, 102);
+          position: absolute;
+          top: -10px;
+          left: 10px;
+          background-color: $background-white;
+          transition: all .3s ease;
+        }
+  
+        input,
+        textarea {
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid $form-border-color;
+          margin-bottom: 20px;
+          outline: 0;
+          width: 100%;
+          background-color: transparent;
+  
+          &:placeholder-shown + label {
+            top: 10px;
+            background-color: transparent;
+          }
+  
+          &:focus {
+            border-color: $form-focus-color;
+  
+            + label {
+              top: -10px;
+              left: 10px;
+              background-color: $background-white;
+              color: $form-focus-color;
+              font-weight: $font-medium;
+              font-size: 14px;
+            }
+          }
+        }
+  
+        textarea {
+          resize: none;
+          height: 100px;
+        }
+      }
+  
+      button {
+        background-color: $button-background;
+        color: $background-white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          background-color: $button-hover-background;
+        }
+      }
+    }
+  }
+  
+  .form-container-1 {
+    display: flex;
+    justify-content: center;
+  }
+  

@@ -1,0 +1,15 @@
+// _mixins.scss
+@mixin box-shadow($shadow...) {
+    box-shadow: $shadow;
+  }
+  
+  @mixin transition($properties, $duration, $timing) {
+    transition: $properties $duration $timing;
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

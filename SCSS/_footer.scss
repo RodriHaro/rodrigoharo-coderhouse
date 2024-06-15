@@ -1,0 +1,99 @@
+// _footer.scss
+footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-family: $font-family;
+    padding: 50px 0;
+    font-weight: $font-bold;
+  }
+  
+  .footer {
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 25px;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .logo-footer img {
+    display: flex;
+    width: 150px;
+    height: auto;
+  }
+  
+  .footer-col {
+    flex: 1;
+    padding: 0;
+  
+    h3 {
+      font-size: 18px;
+      font-family: $font-family;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+      position: relative;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        background-color: $highlight-color;
+        width: 50px;
+        height: 2px;
+      }
+    }
+  
+    p {
+      color: $secondary-color;
+      font-size: 15px;
+      font-weight: 300;
+      text-transform: none;
+      text-decoration: none;
+    }
+  
+    svg {
+      width: 15px;
+      height: auto;
+      margin-right: 10px;
+      float: left;
+    }
+  
+    ul {
+      padding: 0;
+  
+      li {
+        margin-bottom: 10px;
+  
+        a {
+          color: $secondary-color;
+          @include transition(color, 0.3s, ease);
+          font-size: 15px;
+          font-weight: 300;
+          text-transform: none;
+          text-decoration: none;
+          @include transition(all, 0.3s, ease);
+  
+          &:hover {
+            color: #725757;
+            padding-left: 7px;
+          }
+        }
+      }
+    }
+  }
+  

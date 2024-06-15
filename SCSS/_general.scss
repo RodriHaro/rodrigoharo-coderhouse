@@ -1,0 +1,17 @@
+// _general.scss
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $font-family;
+  }
+  
+  .poppins-extralight {
+    font-family: $font-family;
+    font-weight: $font-light;
+    font-style: normal;
+  }
+  

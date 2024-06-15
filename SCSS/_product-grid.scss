@@ -1,0 +1,121 @@
+// _product-grid.scss
+.product-grid {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  
+    .product-image {
+      overflow: hidden;
+      position: relative;
+  
+      a.image {
+        display: block;
+      }
+  
+      .pic-1 {
+        opacity: 1;
+        transition: all 0.5s ease-out 0s;
+      }
+  
+      &:hover .pic-1 {
+        opacity: 0;
+      }
+  
+      .pic-2 {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease-out 0s;
+      }
+  
+      &:hover .pic-2 {
+        opacity: 1;
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+  
+      .product-sale-label {
+        color: #fff;
+        background-color: $highlight-color-product-sale;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 6px 12px;
+        border-radius: 0 0 0 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  
+    .product-content {
+      padding: 12px 0 0;
+  
+      .title {
+        color: #555;
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin: 0 0 6px;
+  
+        a {
+          color: #212121;
+          transition: all 0.3s ease 0s;
+  
+          &:hover {
+            color: $highlight-color-product-sale;
+          }
+        }
+      }
+  
+      .price {
+        color: #606060;
+        font-size: 17px;
+        font-weight: 400;
+        margin: 0 0 10px;
+  
+        span {
+          color: #8f8f8f;
+          font-weight: 500;
+          text-decoration: line-through;
+          margin: 0 5px 0 0;
+        }
+      }
+  
+      .add-to-cart {
+        color: #555;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 15px 10px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1) inset;
+        display: block;
+        transition: all 0.5s ease;
+  
+        &:hover {
+          color: #000;
+          background-color: $button-background-color;
+        }
+      }
+    }
+  }
+  
+  .titulo-indumentaria {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    text-decoration: underline;
+    text-decoration-color: lighten($highlight-color-faq, 20%);
+    text-decoration-thickness: 5px;
+  }

@@ -1,0 +1,43 @@
+// _ayuda.scss
+.metodo-pago,
+.preguntas-frecuentes {
+  width: 90%;
+}
+
+.ayuda-container {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+span {
+  font-weight: bolder;
+}
+
+.titulo-mdp,
+.titulo-faq {
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: $highlight-color-faq;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.ayuda-text {
+  margin: 0px 35px 10px;
+  margin-bottom: 1rem;
+}
+
+.titulo-ayuda {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  text-decoration: underline;
+  text-decoration-color: lighten($highlight-color-faq, 20%);
+  text-decoration-thickness: 5px;
+}

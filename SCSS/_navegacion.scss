@@ -1,0 +1,41 @@
+// _navegacion.scss
+.navegacion {
+    display: flex;
+    font-family: $font-family;
+    list-style-type: none;
+    justify-content: center;
+    padding: 30px;
+    margin: 0 22px;
+  
+    a {
+      text-decoration: none;
+      color: $secondary-color;
+      margin: 0;
+      padding: 20px;
+      cursor: pointer;
+      position: relative;
+      border: none;
+      text-transform: uppercase;
+      @include transition(color, 400ms, cubic-bezier(0.25, 0.8, 0.25, 1));
+  
+      &:focus:after,
+      &:hover:after {
+        width: 80%;
+        left: 10%;
+      }
+  
+      &:after {
+        content: "";
+        pointer-events: none;
+        bottom: 20px;
+        left: 50%;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: $secondary-color;
+        @include transition(width, 400ms, cubic-bezier(0.25, 0.8, 0.25, 1));
+        @include transition(left, 400ms, cubic-bezier(0.25, 0.8, 0.25, 1));
+      }
+    }
+  }
+  

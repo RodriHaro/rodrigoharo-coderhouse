@@ -71,33 +71,24 @@
                 </svg>
             </button>
     </nav>
-
-    <nav role="navigation">
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <a href="../index.html">
-                    <li>inicio</li>
-                </a>
-                <a href="indumentaria.html">
-                    <li>indumentaria</li>
-                </a>
-                <a href="accesorios.html">
-                    <li>accesorios</li>
-                </a>
-                <a href="ayuda.html">
-                    <li>ayuda</li>
-                </a>
-                <a href="contacto.html">
-                    <li>contacto</li>
-                </a>
-                </li>
+    <div class="mobile-wrapper">
+      <div class="mobile-container">
+        <div class="content">
+          <nav>
+            <input type="checkbox" id="hamburger1" />
+            <label for="hamburger1" class="label-burger"></label>
+            
+            <ul class="nav-links">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="./indumentaria.html">Indumentaria</a></li>
+              <li><a href="./accesorios.html">Accesorios</a></li>
+              <li><a href="./ayuda.html">Ayuda</a></li>
+              <li><a href="./contacto.html">Contacto</a></li>
             </ul>
+          </nav>
         </div>
-    </nav>
+      </div>
+    </div>
 </header>
 
 
@@ -230,10 +221,10 @@
               Ingresa tu correo para recibir nuestras ofertas
           </p>
           <div class="newsletter-container">
-              <input placeholder="Email" class="input-email" type="text">
-              <label for="input-field" class="input-label"></label>
-              <span class="input-color"></span>
-          </div>
+            <input placeholder="Email" class="input-email-news" type="text">
+            <label for="input-field" class="input-label-news"></label>
+            <span class="input-color"></span>
+        </div>
       </div>
   </div>
 </footer>
